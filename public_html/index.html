@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MUERC_REVIEWERS_FORM_FOR_NEW_PROPOSALS</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" href="resources/Images/maseno20university.png"  type="image/x-icon"/>
+        <link href="Resources/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Bootstrap Date-Picker Plugin -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <!--  JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/e00b541afd.js"></script>
+        <!-- Include jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+        <script>
+            $(document).ready(function () {
+                var date_input = $('input[name="date"]'); //our date input has the name "date"
+                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+                date_input.datepicker({
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true
+                });
+            })
+        </script>
+    </head>
+    <body>
+                <div class="container wel">
+            <div class="header">
+                <div align="center">
+                    <p align="right">MUERC REV/1 Version 1.2</p>
+                    <img src="Resources/images/maseno20university.png" alt="" class="image-responsive img-header" align="center"/>
+                    <h1 class="heading1 text-center">MASENO UNIVERSITY ETHICS REVIEW COMMITTEE</h1>
+                </div>
+            </div>
+            <div class="body">
+                <form action="" method="post">
+                    <!--Page one contents-->
+                    <div id="page1" align="center">
+                        <h2 class="text-center">REVIEWER′S FORM FOR APLICATIONS/ PROPOSALS:</h2>
+                        <table class="table">
+                            <tr>
+                                <td colspan="3" align="center">Type of Application/proposal for review (tick appropriately):</td>
+                            </tr>
+                            <tr>
+                                <td>New</td> 
+                                <td>Amendment</td>
+                                <td>Revision</td>
+                            </tr>
+                            <tr>
+                                <td> <input type="checkbox" name="new" value="New" id="New"></td>
+                                <td><input type="checkbox" name="amend" value="Amendment" id="Amendment"></td>
+                                <td><input type="checkbox" name="revision" value="Revision" id="Revision"></td>
+                            </tr>
+                            <tr>
+                                <td>Title of project/study</td>
+                                <td colspan="2"> <textarea rows="2" id="title"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Proposal Reference Number: </td>
+                                <td colspan="2"> <textarea rows="2" id="refid"></textarea></td>
+                            </tr>
+                            <tr>                               
+                                <td>Name of Principal Investigator(s): </td>
+                                <td colspan="2"> <textarea rows="2" id="pendinginvestig"></textarea></td>
+                            </tr>
+                            <tr>                               
+                                <td>Institutional Affiliation and addresses:  </td>
+                                <td colspan="2"> <textarea rows="2" id="institutionaddress"></textarea></td>
+                            </tr>
+                            <tr> <td>Proposal/Application Information</td>
+                                <td><input type="checkbox" name="new1" value="New" id="new1">&nbsp;&nbsp;New</td>
+                                <td><input type="checkbox" name="amend1" value="Amended" id="amended1">&nbsp;&nbsp;Amended</td>
+                                <td><input type="checkbox" name="vrevised1" value="Revised" id="revised1">&nbsp;&nbsp;Revised </td>
+                            </tr>
+                        </table>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Review of Proposal/Application</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                    <th>N/A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Does the reviewer have any conflict of interest in reviewing this protocol?*
+                                    </td>
+                                    <td><input type="checkbox" name="yes1" value="Yes" id="yes1"></td>
+                                    <td><input type="checkbox" name="no1" value="No" id="no1"></td>
+                                    <td><input type="checkbox" name="na1" value="N/A" id="na1"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Does the Application/Proposal involve human subjects
+                                    </td>
+                                    <td><input type="checkbox" name="yes2" value="Yes" id="yes2"></td>
+                                    <td><input type="checkbox" name="no2" value="No" id="no2"></td>
+                                    <td><input type="checkbox" name="na2" value="N/A" id="na2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Does the  Application/Proposal involve animals
+                                    </td>
+                                    <td><input type="checkbox" name="yes3" value="Yes" id="yes3"></td>
+                                    <td><input type="checkbox" name="no3" value="No" id="no3"></td>
+                                    <td><input type="checkbox" name="na3" value="N/A" id="na3"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Does the Application/Proposal involve radioisotopes
+                                    </td>
+                                    <td><input type="checkbox" name="yes4" value="Yes" id="yes4"></td>
+                                    <td><input type="checkbox" name="no4" value="No" id="no4"></td>
+                                    <td><input type="checkbox" name="na4" value="N/A" id="na4"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Does the Application/Proposal involve biohazards 
+                                    </td>
+                                    <td><input type="checkbox" name="yes5" value="Yes" id="yes5"></td>
+                                    <td><input type="checkbox" name="no5" value="No" id="no5"></td>
+                                    <td><input type="checkbox" name="na5" value="N/A" id="na5"></td>
+                                </tr>
+                                <tr>
+                                    <td>Has the Application/Proposal been cleared by the School of Graduate Studies/forward by the appropriate committee (where applicable)</td>
+                                    <td><input type="checkbox" name="yes6" value="Yes" id="yes6"></td>
+                                    <td><input type="checkbox" name="no6" value="No" id="no6"></td>
+                                    <td><input type="checkbox" name="na6" value="N/A" id="na6"></td>
+                                </tr>
+                                <tr>
+                                    <td>Have Maseno University Faculty/Scientists been included (where applicable</td>
+                                    <td><input type="checkbox" name="yes7" value="Yes" id="yes7"></td>
+                                    <td><input type="checkbox" name="no7" value="No" id="no7"></td>
+                                    <td><input type="checkbox" name="na7" value="N/A" id="na7"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="table">
+                                    <b>*</b>Please declare conflict of interest and return to the secretariat ASAP if you are not able to review it due to such conflict 
+                                </td>
+                                <td><textarea name="conflictdeclaration" id="conflictdeclaration" rows="2"></textarea></td>
+                            </tr>
+                        </table>
+                        <div align="center">
+                            <input type="button" onclick="openPageTwo()" class="btn-primary" aria-hidden="false" value="Next ⇨">
+                            <script>
+                                function openPageTwo() {
+                                    document.getElementById('page2').style.display = "block"; //set page two's dispalay style property to block so that it is visible
+                                    document.getElementById('page1').style.display = "none"; // make page one invisible
+                                    document.getElementById('page3').style.display = "none" // make sure that the display property of page three is set to none. this is important since we shall call this function later when the display property of page three has changed
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <!-- Page two contents-->
+                    <div id="page2" style="display: none;" align="center">
+                        <h2 class="text-center">SUMMARY OF PROJECT/ RESEARCH PROTOCOL:</h2>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>PROTOCOL DETAILS</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                    <th>N/A</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Is this a priority area of research?
+                                    </td>
+                                    <td><input type="checkbox" name="yes1p2" value="Yes" id="yes1p2"></td>
+                                    <td><input type="checkbox" name="no1p2" value="No" id="no1p2"></td>
+                                    <td><input type="checkbox" name="na1p2" value="N/A" id="na1p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is the conceptual framework/ hypothesis clearly stated?
+                                    </td>
+                                    <td><input type="checkbox" name="yes2p2" value="Yes" id="yes2p2"></td>
+                                    <td><input type="checkbox" name="no2p2" value="No" id="no2p2"></td>
+                                    <td><input type="checkbox" name="na2p2" value="N/A" id="na2p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is the research question (s) clear?
+                                    </td>
+                                    <td><input type="checkbox" name="yes3p2" value="Yes" id="yes3p2"></td>
+                                    <td><input type="checkbox" name="no3p2" value="No" id="no3p2"></td>
+                                    <td><input type="checkbox" name="na3p2" value="N/A" id="na3p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is the objective (s) clearly stated?
+                                    </td>
+                                    <td><input type="checkbox" name="yes4p2" value="Yes" id="yes4p2"></td>
+                                    <td><input type="checkbox" name="no4p2" value="No" id="no4p2"></td>
+                                    <td><input type="checkbox" name="na4p2" value="N/A" id="na4p2"></td>
+                                </tr>
+                                <tr>
+                                    <th>METHODOLOGY</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                    <th>N/A</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are the study procedures stated clearly and appropriately? 
+                                    </td>
+                                    <td><input type="checkbox" name="yes5p2" value="Yes" id="yes5p2"></td>
+                                    <td><input type="checkbox" name="no5p2" value="No" id="no5p2"></td>
+                                    <td><input type="checkbox" name="na5p2" value="N/A" id="na5p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Have study limitations and potential biases addressed?
+                                    </td>
+                                    <td><input type="checkbox" name="yes6p2" value="Yes" id="yes6p2"></td>
+                                    <td><input type="checkbox" name="no6p2" value="No" id="no6p2"></td>
+                                    <td><input type="checkbox" name="na6p2" value="N/A" id="na6p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is the proposed study/project relevant to the needs of the community?
+                                    </td>
+                                    <td><input type="checkbox" name="yes7p2" value="Yes" id="yes7p2"></td>
+                                    <td><input type="checkbox" name="no7p2" value="No" id="no7p2"></td>
+                                    <td><input type="checkbox" name="na7p2" value="N/A" id="na7p2"></td>
+                                </tr>
+                                <tr>
+                                    <th>BIOLOGICAL SPECIMENS / ANIMAL USE IN THE STUDY</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                    <th>N/A</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are the biological materials appropriate for answering the study questions? 
+                                    </td>
+                                    <td><input type="checkbox" name="yes8p2" value="Yes" id="yes8p2"></td>
+                                    <td><input type="checkbox" name="no8p2" value="No" id="no8p2"></td>
+                                    <td><input type="checkbox" name="na8p2" value="N/A" id="na8p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Has storage of the biological material been addressed appropriately?
+                                    </td>
+                                    <td><input type="checkbox" name="yes9p2" value="Yes" id="yes9p2"></td>
+                                    <td><input type="checkbox" name="no9p2" value="No" id="no9p2"></td>
+                                    <td><input type="checkbox" name="na9p2" value="N/A" id="na9p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is there shipment of biological materials?
+                                    </td>
+                                    <td><input type="checkbox" name="yes10p2" value="Yes" id="yes10p2"></td>
+                                    <td><input type="checkbox" name="no10p2" value="No" id="no10p2"></td>
+                                    <td><input type="checkbox" name="na10p2" value="N/A" id="na10p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is the shipment appropriate and justified?
+                                    </td>
+                                    <td><input type="checkbox" name="yes11p2" value="Yes" id="yes11p2"></td>
+                                    <td><input type="checkbox" name="no11p2" value="No" id="no11p2"></td>
+                                    <td><input type="checkbox" name="na11p2" value="N/A" id="na11p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Have all safety issues been addressed? (Biohazard etc)?  
+                                    </td>
+                                    <td><input type="checkbox" name="yes12p2" value="Yes" id="yes12p2"></td>
+                                    <td><input type="checkbox" name="no12p2" value="No" id="no12p2"></td>
+                                    <td><input type="checkbox" name="na12p2" value="N/A" id="na12p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Research with animals – has this been approved by Animal Care & Use Committee (ACUC)?
+                                    </td>
+                                    <td><input type="checkbox" name="yes13p2" value="Yes" id="yes13p2"></td>
+                                    <td><input type="checkbox" name="no13p2" value="No" id="no13p2"></td>
+                                    <td><input type="checkbox" name="na13p2" value="N/A" id="na13p2"></td>
+                                </tr>
+                                <tr>
+                                    <th>OTHER ETHICAL CONSIDERATIONS</th>
+                                    <th>Yes</th>
+                                    <th>No</th>
+                                    <th>N/A</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are Ethical concerns addressed appropriately including counseling and consenting of study participants?
+                                    </td>
+                                    <td><input type="checkbox" name="yes14p2" value="Yes" id="yes14p2"></td>
+                                    <td><input type="checkbox" name="no14p2" value="No" id="no14p2"></td>
+                                    <td><input type="checkbox" name="na14p2" value="N/A" id="na14p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are Ethical concerns addressed appropriately specifically testing /storage and exportation of specimens (where applicable)?
+                                    </td>
+                                    <td><input type="checkbox" name="yes15p2" value="Yes" id="yes15p2"></td>
+                                    <td><input type="checkbox" name="no15p2" value="No" id="no15p2"></td>
+                                    <td><input type="checkbox" name="na15p2" value="N/A" id="na15p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are risks to potential study/project participants/groups minimized and are they reasonable in relation to anticipated benefits?
+                                    </td>
+                                    <td><input type="checkbox" name="yes16p2" value="Yes" id="yes16p2"></td>
+                                    <td><input type="checkbox" name="no16p2" value="No" id="no16p2"></td>
+                                    <td><input type="checkbox" name="na16p2" value="N/A" id="na16p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are there plans for collection, storage and protection of study/project data?
+                                    </td>
+                                    <td><input type="checkbox" name="yes17p2" value="Yes" id="yes17p2"></td>
+                                    <td><input type="checkbox" name="no17p2" value="No" id="no17p2"></td>
+                                    <td><input type="checkbox" name="na17p2" value="N/A" id="na17p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are there plans for collection, storage and protection of study/project biological samples/specimens?
+                                    </td>
+                                    <td><input type="checkbox" name="yes18p2" value="Yes" id="yes18p2"></td>
+                                    <td><input type="checkbox" name="no18p2" value="No" id="no18p2"></td>
+                                    <td><input type="checkbox" name="na18p2" value="N/A" id="na18p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is there evidence of access to information in relation to achieving the study's/project’s objectives?
+                                    </td>
+                                    <td><input type="checkbox" name="yes19p2" value="Yes" id="yes19p2"></td>
+                                    <td><input type="checkbox" name="no19p2" value="No" id="no19p2"></td>
+                                    <td><input type="checkbox" name="na19p2" value="N/A" id="na19p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are there provision clearly stated to safeguard/protect the rights and welfare of vulnerable study/project participants/groups?
+                                    </td>
+                                    <td><input type="checkbox" name="yes20p2" value="Yes" id="yes20p2"></td>
+                                    <td><input type="checkbox" name="no20p2" value="No" id="no20p2"></td>
+                                    <td><input type="checkbox" name="na20p2" value="N/A" id="na20p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Are there provisions for compensation of study/project participants/groups (where applicable)?
+                                    </td>
+                                    <td><input type="checkbox" name="yes21p2" value="Yes" id="yes21p2"></td>
+                                    <td><input type="checkbox" name="no21p2" value="No" id="no21p2"></td>
+                                    <td><input type="checkbox" name="na21p2" value="N/A" id="na21p2"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Is there evidence of GCP/Ethics training by the Principle investigators?
+                                    </td>
+                                    <td><input type="checkbox" name="yes22p2" value="Yes" id="yes22p2"></td>
+                                    <td><input type="checkbox" name="no22p2" value="No" id="no22p2"></td>
+                                    <td><input type="checkbox" name="na22p2" value="N/A" id="na22p2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div align="center">
+                            <input type="button" onclick="openPageOne()" class="btn-danger" value="Previous ⇦">
+                            <input type="button" onclick="openPageThree()" class="btn-primary" value="Next ⇨">
+                            <script>
+                                function openPageThree() {
+                                    document.getElementById('page3').style.display = "block"; //make page three visible
+                                    document.getElementById('page1').style.display = "none"; // still retain the invinsible property of page one
+                                    document.getElementById('page2').style.display = "none"; //ensure page two is not displayed
+                                }
+                                function openPageOne() {
+                                    document.getElementById('page1').style.display = "block"; //make page one visible
+                                    document.getElementById('page2').style.display = "none"; //make page two invisible
+                                    document.getElementById('page3').style.display = "none"; //ensure page three is not displayed
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <!-- Page three contents-->
+                    <div id="page3" style="display: none;" align="center">
+                        <h2 class="text-center">Additional comments: </h2>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    Please provide a comprehensive list of comments you may wish to be sent anonymously to the Applicant/Investigator of the protocol
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea id="comments" name="comments" cols="55" rows="10" placeholder="Please provide a comprehensive list of comments you may wish to be sent anonymously to the Applicant/Investigator of the protocol" ></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>REVIEWERS RECOMMENDATION</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Recwnfc" value="Recommended with no further changes" id="Recwnfc">&nbsp;&nbsp;Recommended with no further changes</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="RecWminor" value="Recommended with minor revisions/ (revisions confirmed by secretariat)" id="RecWminor">&nbsp;&nbsp;Recommended with minor revisions/ (revisions confirmed by secretariat)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="RecWmajor" value="Recommended with major revisions/ (protocol to be sent back to the reviewers)" id="RecWmajor">&nbsp;&nbsp;Recommended with major revisions/ (protocol to be sent back to the reviewers)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="NoRec" value="Not recommended" id="NoRec">&nbsp;&nbsp;Not recommended</td>
+                            </tr>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="4">REVIEWER DETAILS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Name:</th>
+                                    <td colspan="2"><input type="text" name="reviewerName" id="reviewerName" placeholder="What is your name>"></td>
+                                </tr>
+                                <tr> 
+                                    <th colspan="2">Institutional Affiliation:</th>
+                                    <td colspan="2"><input type="text" name="institutionalAffiliation" id="institutionalAffiliation" placeholder="What is your institutional affiliation?"></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Designation:</th>
+                                    <td colspan="2"><input type="text" name="designation" id="designation" placeholder="What is the designation of this document?>"></td>
+                                </tr>
+                                <tr>
+                                    <th>Signature:</th>
+                                    <td><input type="text" name="sign" id="sign" placeholder="Please enter your signture here. You can use the initials of your name as your signature."></td>
+                                    <th>Date:<i class="fa fa-calendar"></i></th>
+                                    <td><input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div align="center">
+                            <input type="button" onclick="openPageTwo()" class="btn-danger" value="Previous ⇦">
+                            <input type="submit"  class="btn-primary" value="Sumbit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <div align="center">
+                    <h3 class="text-left footer-title">MASENO UNIVERSITY IS ISO   9001:2008 CERTIFIED</h3>
+                    <img src="Resources/images/iso.png" alt="" align="right" class="image-responsive footer-image"/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+.img-header{
+   width: 100px;
+   height: 100px;
+   margin-top: 50px;
+   margin-bottom: -25px;
+}
+.wel{
+    border: 1px solid#cccccc;
+}
+h1.heading1{
+     border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../images/bottom-border.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(../images/bottom-border.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(../images/bottom-border.png) 30 stretch;
+    color:#006666;
+}
+.footer-title{
+   border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(../images/top-border.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(../images/top-border.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(../images/top-border.png) 30 stretch;
+}
+.footer-image{
+    height: 80px;
+    width: 80px;
+    margin-top: -70px;
+    margin-right:100px;
+    margin-left: -100px;
+}
