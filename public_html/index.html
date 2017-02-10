@@ -28,7 +28,7 @@ and open the template in the editor.
         <!-- Include Date Range Picker -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-
+        <script src="Resources/js/myfunctions.js" type="text/javascript"></script>
         <script>
             $(document).ready(function () {
                 var date_input = $('input[name="date"]'); //our date input has the name "date"
@@ -66,9 +66,9 @@ and open the template in the editor.
                                 <td>Revision</td>
                             </tr>
                             <tr>
-                                <td> <input type="checkbox" name="new" value="New" id="New"></td>
-                                <td><input type="checkbox" name="amend" value="Amendment" id="Amendment"></td>
-                                <td><input type="checkbox" name="revision" value="Revision" id="Revision"></td>
+                                <td> <input type="checkbox" name="aptype" value="New" id="Check1" onclick="selectOnlyThis(this)" /></td>
+                                <td><input type="checkbox" name="aptype" value="Amendment" id="Check2" onclick="selectOnlyThis(this)" /></td>
+                                <td><input type="checkbox" name="aptype" value="Revision" id="Check3" onclick="selectOnlyThis(this)" /></td>
                             </tr>
                             <tr>
                                 <td>Title of project/study</td>
@@ -87,9 +87,9 @@ and open the template in the editor.
                                 <td colspan="2"> <textarea rows="2" id="institutionaddress"></textarea></td>
                             </tr>
                             <tr> <td>Proposal/Application Information</td>
-                                <td><input type="checkbox" name="new1" value="New" id="new1">&nbsp;&nbsp;New</td>
-                                <td><input type="checkbox" name="amend1" value="Amended" id="amended1">&nbsp;&nbsp;Amended</td>
-                                <td><input type="checkbox" name="vrevised1" value="Revised" id="revised1">&nbsp;&nbsp;Revised </td>
+                                <td><input type="checkbox" name="apinfo" value="New" id="new1" onclick="selectOnlyThis1(this)" />&nbsp;&nbsp;New</td>
+                                <td><input type="checkbox" name="apinfo" value="Amended" id="amended1" onclick="selectOnlyThis1(this)" />&nbsp;&nbsp;Amended</td>
+                                <td><input type="checkbox" name="apinfo" value="Revised" id="revised1" onclick="selectOnlyThis1(this)" />&nbsp;&nbsp;Revised </td>
                             </tr>
                         </table>
                         <table class="table table-bordered">
