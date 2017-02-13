@@ -214,7 +214,7 @@ function selectOnlyThis26(id) {
     });
     id.checked = true;
 }
- //twentyeighth checkbox group with name of evidenceofaccesstoinformation
+//twentyeighth checkbox group with name of evidenceofaccesstoinformation
 function selectOnlyThis27(id) {
     var myCheckbox = document.getElementsByName("evidenceofaccesstoinformation");
     Array.prototype.forEach.call(myCheckbox, function (el) {
@@ -222,7 +222,7 @@ function selectOnlyThis27(id) {
     });
     id.checked = true;
 }
- //twentynineth checkbox group with name of safeguardingrightsprovision
+//twentynineth checkbox group with name of safeguardingrightsprovision
 function selectOnlyThis28(id) {
     var myCheckbox = document.getElementsByName("safeguardingrightsprovision");
     Array.prototype.forEach.call(myCheckbox, function (el) {
@@ -230,7 +230,7 @@ function selectOnlyThis28(id) {
     });
     id.checked = true;
 }
- //thirtieth checkbox group with name of provisionsforcompensation
+//thirtieth checkbox group with name of provisionsforcompensation
 function selectOnlyThis29(id) {
     var myCheckbox = document.getElementsByName("provisionsforcompensation");
     Array.prototype.forEach.call(myCheckbox, function (el) {
@@ -246,7 +246,7 @@ function selectOnlyThis30(id) {
     });
     id.checked = true;
 }
- //thirtysecond checkbox group with name of reviewersrecomendation
+//thirtysecond checkbox group with name of reviewersrecomendation
 function selectOnlyThis31(id) {
     var myCheckbox = document.getElementsByName("reviewersrecomendation");
     Array.prototype.forEach.call(myCheckbox, function (el) {
