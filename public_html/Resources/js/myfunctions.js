@@ -70,3 +70,43 @@ function selectOnlyThis8(id){
   });
   id.checked = true;
 }
+//tenth checkbox group with name of priority
+function selectOnlyThis9(id){
+  var myCheckbox = document.getElementsByName("priority");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+    el.checked = false;
+  });
+  id.checked = true;
+}
+//Eleventh checkbox group with name of conceptualframeworkclarity
+function selectOnlyThis10(id){
+  var myCheckbox = document.getElementsByName("conceptualframeworkclarity");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+    el.checked = false;
+  });
+  id.checked = true;
+}
+//twelveth checkbox group with name of researchquestionclarity
+function selectOnlyThis11(id){
+  var myCheckbox = document.getElementsByName("researchquestionclarity");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+    el.checked = false;
+  });
+  id.checked = true;
+}
+//thirteenth checkbox group with name of objectiveclarity
+function selectOnlyThis12(id){
+  var myCheckbox = document.getElementsByName("objectiveclarity");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+    el.checked = false;
+  });
+  id.checked = true;
+}
+//third checkbox group with name of conflictofinterest
+function selectOnlyThis2(id){
+  var myCheckbox = document.getElementsByName("conflictofinterest");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+    el.checked = false;
+  });
+  id.checked = true;
+}
