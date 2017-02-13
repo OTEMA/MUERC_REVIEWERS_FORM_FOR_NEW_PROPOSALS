@@ -43,7 +43,7 @@ and open the template in the editor.
         </script>
     </head>
     <body>
-                <div class="container wel">
+        <div class="container wel">
             <div class="header">
                 <div align="center">
                     <p align="right">MUERC REV/1 Version 1.2</p>
@@ -65,7 +65,7 @@ and open the template in the editor.
                                 <td>Amendment</td>
                                 <td>Revision</td>
                             </tr>
-                            <tr>
+                            <tr class="options">
                                 <td> <input type="checkbox" name="aptype" value="New" id="Check1" onclick="selectOnlyThis(this)" /></td>
                                 <td><input type="checkbox" name="aptype" value="Amendment" id="Check2" onclick="selectOnlyThis(this)" /></td>
                                 <td><input type="checkbox" name="aptype" value="Revision" id="Check3" onclick="selectOnlyThis(this)" /></td>
@@ -106,53 +106,53 @@ and open the template in the editor.
                                     <td>
                                         Does the reviewer have any conflict of interest in reviewing this protocol?*
                                     </td>
-                                    <td><input type="checkbox" name="yes1" value="Yes" id="yes1"></td>
-                                    <td><input type="checkbox" name="no1" value="No" id="no1"></td>
-                                    <td><input type="checkbox" name="na1" value="N/A" id="na1"></td>
+                                    <td><input type="checkbox" name="conflictofinterest" value="Yes" id="yes1" onclick="selectOnlyThis2(this)" /></td>
+                                    <td><input type="checkbox" name="conflictofinterest" value="No" id="no1" onclick="selectOnlyThis2(this)" /></td>
+                                    <td><input type="checkbox" name="conflictofinterest" value="N/A" id="na1" onclick="selectOnlyThis2(this)" /></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Does the Application/Proposal involve human subjects
                                     </td>
-                                    <td><input type="checkbox" name="yes2" value="Yes" id="yes2"></td>
-                                    <td><input type="checkbox" name="no2" value="No" id="no2"></td>
-                                    <td><input type="checkbox" name="na2" value="N/A" id="na2"></td>
+                                    <td><input type="checkbox" name="humansubjects" value="Yes" id="yes2" onclick="selectOnlyThis3(this)" /></td>
+                                    <td><input type="checkbox" name="humansubjects" value="No" id="no2" onclick="selectOnlyThis3(this)" /></td>
+                                    <td><input type="checkbox" name="humansubjects" value="N/A" id="na2" onclick="selectOnlyThis3(this)" /></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Does the  Application/Proposal involve animals
                                     </td>
-                                    <td><input type="checkbox" name="yes3" value="Yes" id="yes3"></td>
-                                    <td><input type="checkbox" name="no3" value="No" id="no3"></td>
-                                    <td><input type="checkbox" name="na3" value="N/A" id="na3"></td>
+                                    <td><input type="checkbox" name="animals" value="Yes" id="yes3" onclick="selectOnlyThis4(this)" /></td>
+                                    <td><input type="checkbox" name="animals" value="No" id="no3" onclick="selectOnlyThis4(this)" /></td>
+                                    <td><input type="checkbox" name="animals" value="N/A" id="na3" onclick="selectOnlyThis4(this)" /></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Does the Application/Proposal involve radioisotopes
                                     </td>
-                                    <td><input type="checkbox" name="yes4" value="Yes" id="yes4"></td>
-                                    <td><input type="checkbox" name="no4" value="No" id="no4"></td>
-                                    <td><input type="checkbox" name="na4" value="N/A" id="na4"></td>
+                                    <td><input type="checkbox" name="radioisotopes" value="Yes" id="yes4"></td>
+                                    <td><input type="checkbox" name="radioisotopes" value="No" id="no4"></td>
+                                    <td><input type="checkbox" name="radioisotopes" value="N/A" id="na4"></td>
                                 </tr>
                                 <tr>
                                     <td>
                                         Does the Application/Proposal involve biohazards 
                                     </td>
-                                    <td><input type="checkbox" name="yes5" value="Yes" id="yes5"></td>
-                                    <td><input type="checkbox" name="no5" value="No" id="no5"></td>
-                                    <td><input type="checkbox" name="na5" value="N/A" id="na5"></td>
+                                    <td><input type="checkbox" name="biohazards" value="Yes" id="yes5"></td>
+                                    <td><input type="checkbox" name="biohazards" value="No" id="no5"></td>
+                                    <td><input type="checkbox" name="biohazards" value="N/A" id="na5"></td>
                                 </tr>
                                 <tr>
                                     <td>Has the Application/Proposal been cleared by the School of Graduate Studies/forward by the appropriate committee (where applicable)</td>
-                                    <td><input type="checkbox" name="yes6" value="Yes" id="yes6"></td>
-                                    <td><input type="checkbox" name="no6" value="No" id="no6"></td>
-                                    <td><input type="checkbox" name="na6" value="N/A" id="na6"></td>
+                                    <td><input type="checkbox" name="clearance" value="Yes" id="yes6"></td>
+                                    <td><input type="checkbox" name="clearance" value="No" id="no6"></td>
+                                    <td><input type="checkbox" name="clearance" value="N/A" id="na6"></td>
                                 </tr>
                                 <tr>
                                     <td>Have Maseno University Faculty/Scientists been included (where applicable</td>
-                                    <td><input type="checkbox" name="yes7" value="Yes" id="yes7"></td>
-                                    <td><input type="checkbox" name="no7" value="No" id="no7"></td>
-                                    <td><input type="checkbox" name="na7" value="N/A" id="na7"></td>
+                                    <td><input type="checkbox" name="masenoinclusion" value="Yes" id="yes7"></td>
+                                    <td><input type="checkbox" name="masenoinclusion" value="No" id="no7"></td>
+                                    <td><input type="checkbox" name="masenoinclusion" value="N/A" id="na7"></td>
                                 </tr>
                             </tbody>
                         </table>
