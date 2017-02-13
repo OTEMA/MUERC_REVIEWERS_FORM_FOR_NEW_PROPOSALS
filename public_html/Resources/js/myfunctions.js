@@ -254,3 +254,33 @@ function selectOnlyThis31(id) {
     });
     id.checked = true;
 }
+//function to open page one
+function openPageOne() {
+    document.getElementById('page1').style.display = "block"; //make page one visible
+    document.getElementById('page2').style.display = "none"; //make page two invisible
+    document.getElementById('page3').style.display = "none"; //ensure page three is not displayed
+}
+//function to open page two
+function openPageTwo() {
+    document.getElementById('page2').style.display = "block"; //set page two's dispalay style property to block so that it is visible
+    document.getElementById('page1').style.display = "none"; // make page one invisible
+    document.getElementById('page3').style.display = "none"; // make sure that the display property of page three is set to none. this is important since we shall call this function later when the display property of page three has changed
+}
+//function to open page three
+function openPageThree() {
+    document.getElementById('page3').style.display = "block"; //make page three visible
+    document.getElementById('page1').style.display = "none"; // still retain the invinsible property of page one
+    document.getElementById('page2').style.display = "none"; //ensure page two is not displayed
+}
+//function to add callender to the date field
+$(document).ready(function () {
+                var date_input = $('input[name="date"]');
+                var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+                date_input.datepicker({
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true
+                });
+            });
+                               
