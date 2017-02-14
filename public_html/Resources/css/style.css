@@ -1,14 +1,14 @@
 .img-header{
-   width: 100px;
-   height: 100px;
-   margin-top: 50px;
-   margin-bottom: -25px;
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: -25px;
 }
 .wel{
-    border: 1px solid#cccccc;
+    border: 1px solid cadetblue;
 }
 h1.heading1{
-     border: 10px solid transparent;
+    border: 10px solid transparent;
     padding: 15px;
     -webkit-border-image: url(../images/bottom-border.png) 30 stretch; /* Safari 3.1-5 */
     -o-border-image: url(../images/bottom-border.png) 30 stretch; /* Opera 11-12.1 */
@@ -17,7 +17,7 @@ h1.heading1{
     font-family: 'Merriweather', serif;
 }
 .footer-title{
-   border: 10px solid transparent;
+    border: 10px solid transparent;
     padding: 15px;
     -webkit-border-image: url(../images/top-border.png) 30 stretch; /* Safari 3.1-5 */
     -o-border-image: url(../images/top-border.png) 30 stretch; /* Opera 11-12.1 */
@@ -37,23 +37,45 @@ th{
     font-size: 14px;
 }
 td{
-   font-family: 'Roboto Slab', serif;
-   font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
 }
 .button {
-background-color: crimson;
-background-image: -webkit-linear-gradient(top, crimson, crimson);
-background-image: -moz-linear-gradient(top,crimson,crimson);
-display: inline-block;
-font-size: 24px;
-font-family: 'Meiryo UI';
-color: #fff;
-text-decoration: none !important;
-padding: 5px 20px;
-line-height: inherit;
-overflow: hidden;
-position: relative;
-border-radius: 2px;
-margin-top: 13px;
-margin-bottom: 10px;
+    background-color: cadetblue;
+    background-image: -webkit-linear-gradient(top, cadetblue, cadetblue);
+    background-image: -moz-linear-gradient(top,cadetblue,cadetblue);
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    color: coral;
+    text-decoration: none !important;
+    padding: 5px 20px;
+    line-height: inherit;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.button:hover {
+    opacity: 0.9;
+}
+#incfont{
+    background-color: orange;
+    background-image: -webkit-linear-gradient(top, orange, orange);
+    background-image: -moz-linear-gradient(top,orange,orange);
+    color:black;
+}
+#decfont{
+    background-color: orange;
+    background-image: -webkit-linear-gradient(top, orange, orange);
+    background-image: -moz-linear-gradient(top,orange,orange);
+    color:black;
+}
+#fontlinks{
+    margin-top:0px;
+    margin-bottom:20px;
+}
+.buttonfont{
+    color:dimgrey;
 }
