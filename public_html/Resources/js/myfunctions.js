@@ -287,14 +287,14 @@ $(document).ready(function () {
 $(document).ready(function() { 
 		$('#incfont').click(function(){	   
         curentBodySize= parseInt($('td, th').css('font-size')) + 2;
-        
+        currentHisize
 		if(curentBodySize<=22)
         $('td, th').css('font-size', curentBodySize);
         });  
 		$('#decfont').click(function(){	   
         curentBodySize= parseInt($('td, th').css('font-size')) - 2;
-		if(curSize>=10)
-        $('td, th').css('font-size', curSize);
+		if(curentBodySize>=10)
+        $('td, th').css('font-size', curentBodySize);
         }); 
 	});
               

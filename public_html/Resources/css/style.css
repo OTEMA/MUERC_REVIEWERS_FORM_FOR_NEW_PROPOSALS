@@ -40,3 +40,20 @@ td{
    font-family: 'Roboto Slab', serif;
    font-size: 13px;
 }
+.button {
+background-color: crimson;
+background-image: -webkit-linear-gradient(top, crimson, crimson);
+background-image: -moz-linear-gradient(top,crimson,crimson);
+display: inline-block;
+font-size: 24px;
+font-family: 'Meiryo UI';
+color: #fff;
+text-decoration: none !important;
+padding: 5px 20px;
+line-height: inherit;
+overflow: hidden;
+position: relative;
+border-radius: 2px;
+margin-top: 13px;
+margin-bottom: 10px;
+}
