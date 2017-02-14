@@ -284,18 +284,19 @@ $(document).ready(function () {
     });
 });
 //font changes for table headers and documents
-$(document).ready(function() { 
-		$('#incfont').click(function(){	   
-        curentBodySize= parseInt($('td, th').css('font-size')) + 2;
-        currentHisize
-		if(curentBodySize<=22)
-        $('td, th').css('font-size', curentBodySize);
-        });  
-		$('#decfont').click(function(){	   
-        curentBodySize= parseInt($('td, th').css('font-size')) - 2;
-		if(curentBodySize>=10)
-        $('td, th').css('font-size', curentBodySize);
-        }); 
-	});
-              
+$(document).ready(function () {
+    //function to increase fonts
+    $('#incfont').click(function () {
+        curentBodySize = parseInt($('td, th').css('font-size')) + 2;
+        if (curentBodySize <= 22)
+            $('td, th').css('font-size', curentBodySize);
+    });
+    //function to decrease fonts
+    $('#decfont').click(function () {
+        curentBodySize = parseInt($('td, th, h1, h2, h3').css('font-size')) - 2;
+        if (curentBodySize >= 10)
+            $('td, th, h1, h2, h3').css('font-size', curentBodySize);
+    });
+});
+
                
